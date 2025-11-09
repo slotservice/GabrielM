@@ -1,0 +1,259 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #0a3d1f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Container - positioned at top-left with no margins */
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 619px;
+    height: 1101px;
+    overflow: hidden;
+    background-image: url('assets/fondo.png');
+    background-size: 619px 1101px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+/* Header Section */
+.header {
+    background: #f0f0f0;
+    padding: 14px 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-coca {
+    height: 42px;
+    width: auto;
+}
+
+.logo-ovacion {
+    height: 38px;
+    width: auto;
+}
+
+/* Title Section */
+.title-section {
+    text-align: center;
+    padding: 16px 20px 14px;
+    color: white;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.star-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: -5px;
+    margin-bottom: 8px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.match-info {
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    margin-top: -9px;
+}
+
+.match-info strong {
+    font-weight: 700;
+}
+
+/* Players Grid */
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 11px;
+    padding: 0 80px 20px;
+}
+
+/* Player Card */
+.player-card {
+    background: #1a3d28;
+    border-radius: 0 0 10px 10px;
+    overflow: visible;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: 16px;
+    padding-top: 4px;
+}
+
+/* Position Label */
+.position-label {
+    background: #1a3d28;
+    color: white;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: calc(100% + 0px);
+    clip-path: polygon(
+        8% 0,
+        92% 0,
+        100% 50%,
+        85% 100%,
+        15% 100%,
+        0% 50%
+    );
+}
+
+.position-label.gold {
+    background: linear-gradient(135deg, #d4a850 0%, #f4d670 50%, #d4a850 100%);
+    color: #1a1a1a;
+}
+
+/* Player Photo */
+.player-photo {
+    width: 90%;
+    height: auto;
+    max-height: 100px;
+    object-fit: fill;
+    object-position: top center;
+    display: block;
+    margin-left: 5px;
+    background: white;
+}
+
+/* Player Name Section */
+.player-name {
+    background: #4a9960;
+    color: white;
+    text-align: center;
+    padding: 5px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: -10px 5px;
+    position: relative;
+    z-index: 5;
+    clip-path: polygon(
+        5% 0,
+        95% 0,
+        100% 15%,
+        100% 85%,
+        95% 100%,
+        5% 100%,
+        0% 85%,
+        0% 15%
+    );
+}
+
+.first-name {
+    font-size: 6.5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.last-name {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* Star Badge */
+.star-badge {
+    background: #1a3d28;
+    color: white;
+    text-align: center;
+    font-size: 4.5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* Points Box */
+.points-box {
+    background: #1a3d28;
+    color: white;
+    text-align: center;
+    padding: 5px 4px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    gap: 4px;
+}
+
+.points-box.gold {
+    background: linear-gradient(90deg, #d4a850 0%, #f4f6b0 80%, #d4a850 100%);
+    color: #1a1a1a;
+}
+
+.position-label.gold {
+    background: linear-gradient(90deg, #d4a850 0%, #f4f6b0 80%, #d4a850 100%);
+    color: #1a1a1a;
+}
+
+.points-number {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.points-text {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* Star Player Card */
+.player-card.star-player {
+    background: linear-gradient(90deg, #d4a850 0%, #f4f6b0 80%, #d4a850 100%);
+    box-shadow: 0 3px 8px rgba(212, 168, 80, 0.5);
+}
+
+.player-card.star-player .player-name {
+    padding: 4px 4px;
+}
+
+/* Star Badge Positioning */
+.player-card.star-player .star-badge {
+    margin-top: -10px;
+}
