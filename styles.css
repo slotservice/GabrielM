@@ -75,6 +75,7 @@ body {
 }
 
 .subtitle {
+    font-family: Poppins, Light;
     font-size: 36px;
     font-weight: 300;
     letter-spacing: 5px;
@@ -85,6 +86,7 @@ body {
 }
 
 .match-info {
+    font-family: Poppins, Bold;
     font-size: 17px;
     font-weight: 300;
     color: white;
@@ -105,7 +107,7 @@ body {
 
 /* Player Card */
 .player-card {
-    background: white;
+    background: #1a3d28;
     border-radius: 8px;
     overflow: visible;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
@@ -116,6 +118,7 @@ body {
 
 /* Position Label */
 .position-label {
+    font-family: Montserrat, Bold;
     background: #1a3d28;
     color: white;
     text-align: center;
@@ -125,7 +128,7 @@ body {
     letter-spacing: 0.8px;
     text-transform: uppercase;
     position: absolute;
-    top: -11px;
+    top: -7px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -160,6 +163,7 @@ body {
 
 /* Player Name Section */
 .player-name {
+    font-family: Poppins, Bold;
     background: #4a9960;
     color: white;
     text-align: center;
@@ -209,6 +213,7 @@ body {
 
 /* Points Box */
 .points-box {
+    font-family: Poppins, ExtraBold;
     background: #1a3d28;
     color: white;
     text-align: center;
@@ -232,6 +237,7 @@ body {
 }
 
 .points-number {
+    font-family: Poppins, Bold;
     font-size: 28px;
     font-weight: 900;
     line-height: 1;
